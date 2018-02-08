@@ -81,6 +81,7 @@ const models = [
         data: [
           { type: 'fields', id: 'who' },
           { type: 'fields', id: 'may-create-resource' },
+          { type: 'fields', id: 'may-read-resource' },
           { type: 'fields', id: 'may-update-resource' },
           { type: 'fields', id: 'may-delete-resource' },
           { type: 'fields', id: 'may-write-field' },
@@ -444,6 +445,13 @@ const models = [
   {
     type: 'fields',
     id: 'may-create-resource',
+    attributes: {
+      'field-type': '@cardstack/core-types::boolean'
+    }
+  },
+  {
+    type: 'fields',
+    id: 'may-read-resource',
     attributes: {
       'field-type': '@cardstack/core-types::boolean'
     }
