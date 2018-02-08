@@ -504,7 +504,7 @@ const models = [
   },
   {
     type: 'grants',
-    id: '0',
+    id: 'hub-internal-grant',
     attributes: {
       'may-write-field': true,
       'may-create-resource': true,
@@ -513,7 +513,7 @@ const models = [
     },
     relationships: {
       who: {
-        data: { type: 'users', id: '@cardstack/hub' }
+        data: { type: 'groups', id: '@cardstack/hub' }
       }
     }
   },
